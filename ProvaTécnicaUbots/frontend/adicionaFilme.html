@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <script type="text/javascript" src="file:///C:/Users/ASUS/Desktop/Prototipo/frontend/dynamic.js"></script>
+        
+        <title>ProvaTecnica||Ubots</title>
+
+        <style>
+            body{
+            background-image: url("imagem/BackBody.jpg");
+            height: 1000px;
+            }
+            
+            #botaoAdiciona{
+                margin-left: 40%;
+                margin-top: 1%;
+            }
+            #botaoAdicionaOutro{
+                margin-top: 3%;
+                margin-bottom: 1%;
+                display: none;
+                margin-left: 40%;
+            }
+            #formCadastro{
+                display: block;
+            }
+            img{
+                width: 50%;
+                margin-left: 25%;
+            }
+            li{
+                margin-left: 150px;
+            }
+            #conteudo{
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            h1{
+                margin-left: 35%;
+                margin-right: 35%;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                color: black;
+            }
+            input{
+                width: 50%;
+                margin-bottom: 2%; 
+            }
+            label{
+                color: black;
+            }
+            table{
+                margin-top: 5%;
+            }
+            td{
+                color: black;
+                font-family: arial Black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <img src="imagem/LogoUbots.png" class="img-responsive" alt="LogoResponsiva">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a class="navbar-brand" href="index.html">Menu</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+        
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="adicionaFilme.html">Adicionar Filmes</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="atualizaFilme.html">Atualizar Filmes</a>
+                            </li>
+                                
+                            <li class="nav-item">
+                                <a class="nav-link" href="deletaFilme.html">Deletar Filmes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        <div id="conteudo">
+            <div id="formCadastro">
+                <h1><Strong>Adicionar</Strong></h1>
+
+                    <label>
+                        <strong>Nome Do Filme</strong>
+                    </label>
+                        <input type="text" class="form-control" id="nomeFilme">
+
+                    <label>
+                        <strong>Duração</strong>
+                    </label>
+                        <input type="text" class="form-control" id="duracao">
+
+                    <label>
+                        <strong>Ano de Lançamento</strong>
+                    </label>
+                        <input type="text" class="form-control" id="ano">
+
+                    <label>
+                        <strong>Sinopse</strong>
+                    </label>
+                        <input type="text" class="form-control" id="sinopse">
+                    
+                    <label>
+                        <strong>Classificação indicativa</strong>
+                    </label>
+                        <select class="form-control" id="classificacao">
+                            <option value="L(Livre)">L(Livre)</option>
+                            <option value="+10">+10</option>
+                            <option value="+12">+12</option>
+                            <option value="+14">+14</option>
+                            <option value="+16">+16</option>
+                            <option value="+18">+18</option>
+                        </select>
+                    
+                    <label>
+                        <strong>Avaliação do Filme</strong>
+                    </label>
+                        <select class="form-control" id="avaliacao">
+                            <option value="Péssimo">Péssimo</option>
+                            <option value="Ruim">Ruim</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Bom">Bom</option>
+                            <option value="Ótimo">Ótimo</option>
+                        </select>
+
+                        <button id="botaoAdiciona" class="btn btn-warning btn-filter" onclick="cadastrarFilme()"><strong>Adicionar Filme</strong></button>
+            </div>
+                        <button id="botaoAdicionaOutro" class="btn btn-warning btn-filter" onclick="mostrarFormulario()"><strong>Adicionar Outro</strong></button>
+            <div>
+              <table class="table table-hover" id="listaDeFilmes">
+                <tbody>
+                  <tr>
+                    <td><strong>Nome do Filme</strong></td>
+                    <td><strong>Duração</strong></td>
+                    <td><strong>Ano</strong></td>
+                    <td><strong>Sinopse</strong></td>
+                    <td><strong>Classificação</strong></td>
+                    <td><strong>Avaliação</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        </div> 
+    </body>
+</htmls>

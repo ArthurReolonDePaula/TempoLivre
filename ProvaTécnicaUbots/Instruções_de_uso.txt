@@ -1,0 +1,12 @@
+Olá, bem vindo. Necessario ter o Node.js na máquina.
+------------------------------------------------------
+1° Entre na pasta backend. Atravéz dessa diretório inicie
+o node pelo cmd com o comando npm start
+
+2° Vá ao seu navegador e digite http://localhost:3000
+
+3° Adicione as informações necessarias e clique em "Adicionar filme". Informações inseridas na tabela abaixo.
+
+4° Digite novamente http://localhost:3000 para voltar ao index ou feche e abra de novo, as informações estaram na tabela.
+
+5° Se tentar adicionar um filme sem preencher algum campo o site manda um aviso para preencher o campo e branco.
